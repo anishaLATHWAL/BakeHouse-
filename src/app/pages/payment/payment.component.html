@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<h2 class="container m-2">Make your payment</h2>
+<div class="d-flex align-items-center justify-content-center gap-2 container">
+  <div class="container">
+    <p>Your Product will be delivered to this address:</p>
+    <p>{{ user.address }}</p>
+    <p>Amount to be payed: Rs.{{ amount }}</p>
+    <p>Payment Status: {{ paymentStatus }}</p>
+  </div>
+  <div
+    class="d-flex flex-column gap-2 align-items-center justify-content-center container"
+  >
+    <img src="../../../assets/QR.png" alt="" />
+    <p>Scan the QR code to make payment</p>
+    <p>Or Make payment to</p>
+    <p>7479729574&#64;ybl VPA</p>
+  </div>
+</div>

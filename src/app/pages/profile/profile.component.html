@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<p class="title">My Account</p>
+<div class="profile-container">
+  <div class="profile-details">
+    <div class="d-flex align-items-center justify-content-center">
+      <img
+        src="
+        https://www.gravatar.com/avatar/md5?s=200
+        "
+        alt=""
+      />
+    </div>
+    <div>
+      <h2>{{ user.name }}</h2>
+      <p>Email: {{ user.email }}</p>
+      <p>Phone: +91 {{ user.phoneNumber }}</p>
+      <p>Address: {{ user.address }}</p>
+      <p>Pin Code: {{user.pincode}}</p>
+    </div>
+  </div>
+  <div class="profile-actions">
+    <button>Edit Profile</button>
+  </div>
+</div>

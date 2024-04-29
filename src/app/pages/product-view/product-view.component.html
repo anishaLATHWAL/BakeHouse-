@@ -1,0 +1,40 @@
+<!-- <p>product-view works!</p>
+<p>{{ data.name }}</p> -->
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="left">
+    <img [src]="data.imageUrl" alt="" class="rounded" />
+  </div>
+  <div class="right">
+    <p class="ProductName">{{ data.name }}</p>
+    <p class="ProductPrice">Rs {{ data.price }}</p>
+    <p class="exp">Expires: {{ data.expireDate }}</p>
+    <div class="d-flex gap-4">
+      <button (click)="addToCart(data)" class="CartBtn">Add to cart</button>
+      <button (click)="buyNow(data)" class="BuyBtn">Buy Now</button>
+    </div>
+    <p class="description">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates modi
+      at beatae optio, porro expedita inventore molestiae dolorem ut iure
+      laudantium nostrum nihil ipsa? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Eius, libero beatae obcaecati voluptatibus corrupti
+      saepe dolores illo mollitia dolorem doloribus repellendus quas maiores.
+      Optio a corrupti laborum, eveniet quaerat magni.
+    </p>
+    <p class="offers">Available Offers</p>
+    <ul>
+      <li>
+        <span class="material-symbols-rounded"> sell </span>10% off on all
+        products
+      </li>
+      <li>
+        <span class="material-symbols-rounded"> sell </span>5% off on all
+        products
+      </li>
+      <li>
+        <span class="material-symbols-rounded"> sell </span>10% off on all
+        products
+      </li>
+    </ul>
+  </div>
+</div>

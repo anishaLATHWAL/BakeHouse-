@@ -1,0 +1,59 @@
+<div class="pills">
+  <a (click)="onLinkClick('ice cream')" class="pill"> Ice Cream </a>
+  <a (click)="onLinkClick('smoothie')" class="pill"> Smoothie </a>
+  <a (click)="onLinkClick('beverages')" class="pill"> Beverages </a>
+  <a (click)="onLinkClick('cake')" class="pill"> Cake </a>
+</div>
+
+<div class="container">
+  <div
+    class="panel"
+    [class.active]="activePanel === 'a'"
+    (click)="setActive('a')"
+    style="
+      background-image: url('https://images.unsplash.com/photo-1543228616-63022d23d1e2?q=80&w=2041&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    "
+  >
+    <h3>Cake</h3>
+  </div>
+  <div
+    class="panel"
+    [class.active]="activePanel === 'b'"
+    (click)="setActive('b')"
+    style="
+      background-image: url('https://plus.unsplash.com/premium_photo-1684952851239-a9cc9567884e?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    "
+  >
+    <h3>Ice Cream</h3>
+  </div>
+  <div
+    class="panel"
+    [class.active]="activePanel === 'c'"
+    (click)="setActive('c')"
+    style="
+      background-image: url('https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://twinpickle.com/wp-content/uploads/2023/06/Rainbow-Striped-Smoothie-Popsicles-.jpg');
+    "
+  >
+    <h3>Popsicles</h3>
+  </div>
+  <div
+    class="panel"
+    [class.active]="activePanel === 'd'"
+    (click)="setActive('d')"
+    style="
+      background-image: url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=1914&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    "
+  >
+    <h3>Beverages</h3>
+  </div>
+  <div
+    class="panel"
+    [class.active]="activePanel === 'e'"
+    (click)="setActive('e')"
+    style="
+      background-image: url('https://images.unsplash.com/photo-1622597468620-656aa1f981ea?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    "
+  >
+    <h3>Special Smoothies</h3>
+  </div>
+</div>

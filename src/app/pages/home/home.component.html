@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<app-caro></app-caro>
+<div class="cardsCont">
+  <h1>Shop Delicious Products</h1>
+</div>
+<div class="cardsCont">
+  <div *ngFor="let item of items" (click)="onLinkClick(item)" class="card">
+    <div class="cardImg">
+      <img
+        [src]="item.imageUrl"
+        alt="{{ item.name }}"
+        (click)="onLinkClick(item)"
+      />
+    </div>
+    <div class="cardContent">
+      <p (click)="onLinkClick(item)">{{ item.name }}</p>
+      <div class="bottom">
+        <p>₹{{ item.price }}</p>
+        <button (click)="onLinkClick(item)" mat-raised-button color="primary">
+          <span class="material-symbols-rounded">info</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

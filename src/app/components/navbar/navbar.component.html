@@ -1,0 +1,9 @@
+<nav class="nav d-flex align-items-center justify-content-between">
+  <a href="/" class="logo">BakeHouse</a>
+  <div class="d-flex align-items-center justify-content-center gap-4">
+    <a *ngIf="!isAuth" [routerLink]="['/login']">Login</a>
+    <a *ngIf="!isAuth" [routerLink]="['/register']">Register</a>
+    <a *ngIf="isAuth" [routerLink]="['/profile']">Profile</a>
+    <a *ngIf="isAuth" (click)="logout()" class="logout">Logout</a>
+  </div>
+</nav>

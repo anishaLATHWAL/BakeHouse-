@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "icecream-b527d": {
+      "hosting": {
+        "ice-cream": [
+          "icecream-b527d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "icecream-b527d"
+  }
+}
